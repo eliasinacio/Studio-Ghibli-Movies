@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.li`
+  color: #081B1F;
   margin: 0; 
   box-sizing: border-box;
 

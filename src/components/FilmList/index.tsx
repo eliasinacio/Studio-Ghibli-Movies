@@ -30,9 +30,7 @@ class FilmList extends Component<Props> {
     const { films } = this.props;
     return (
       <Container>
-        {films.map(film => (
-          <FilmItem key={film.id} film={film} />
-        ))}
+        { films.map( film => <FilmItem key={film.id} film={film}/> )}
       </Container>
     )
   }
