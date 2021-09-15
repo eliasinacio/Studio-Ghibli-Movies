@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.li`
-  color: #081B1F;
   margin: 0; 
   box-sizing: border-box;
 
@@ -9,6 +8,8 @@ export const Container = styled.li`
   max-width: 500px;
   padding: 10px 0;
   margin: 0 20px 20px 0;
+
+  font-size: 1.1rem;
 
   .title {
     margin: 5px 0;

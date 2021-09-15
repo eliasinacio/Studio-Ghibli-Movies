@@ -1,13 +1,18 @@
 import { Provider } from "react-redux";
 import FilmList from "./components/FilmList";
-import GlobalStyle from "./globalStyle/globalStyle";
+import GlobalStyle from "./Styles/globalStyle";
 import store from "./store";
 
 const App = () => {
   return (
     <div className="App">
-      <h1> Studio Ghibli Movies</h1>
-
+      <header>
+        <h1 className="page-title"> Studio Ghibli Movies 
+        
+        <a href="https://ghibliapi.herokuapp.com/" target="_blank" rel="noopener noreferrer"> 
+          {ChainIcon} Studio Ghibli API
+        </a></h1>
+      </header>
       <Provider store={store}>
         <GlobalStyle />
         <FilmList />
@@ -17,3 +22,6 @@ const App = () => {
 };
 
 export default App;
+
+
+const ChainIcon = <img src="https://img.icons8.com/material-outlined/24/000000/link--v1.png" alt=""/>;

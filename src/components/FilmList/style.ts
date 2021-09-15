@@ -5,5 +5,4 @@ export const Container = styled.ul`
 
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 `;
